@@ -20,6 +20,8 @@ app.use('/graphql', graphqlHTTP({
 
 app.listen(3000, () => console.log('Server is alive!'));
 
+//Run server: nodemon index.js
+
 //Server URL
 //http://localhost:3000/graphql?
 
@@ -27,7 +29,7 @@ app.listen(3000, () => console.log('Server is alive!'));
 //Single unit query example
 /*
     {
-        unit(name: 'Battlecruiser'){
+        unit(name: "Battlecruiser"){
             name,
             race
         }
